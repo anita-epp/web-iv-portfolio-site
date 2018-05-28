@@ -9,45 +9,47 @@
 <title>Epp Web I Assignment 5: Index</title>
 </head>
 <body>
-	<header>
-		<div class="wrapper row">
-			<h1><a href="#">anita</a></h1> <!-- change for other pages ---->
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<section> <!--gradient background---->
-		<div class="wrapper">
-			<header>
-				<h2><span>a design portfolio</span><br>anita epp</h2>
-			</header>
-			<div class="row">
-				<div class="rect-three dk-blue"><a href="about.html">
-					<img src="img/portrait-one" alt="portrait of anita epp">
-					<header>
-						<h3>about</h3>
-					</header></a>
+	<header id="home"> <!-- gradient background -->
+		<div class="navbar"> <!-- semi-transparent background -->
+			<div class="wrapper row">
+				<div>
+					<p><a href="#">anita</a></p>
 				</div>
-				<div class="rect-three dk-blue"><a href="projects.html">
-					<img src="img/project-mktg-one" alt="poster of marketing project">
-					<header>
-						<h3>project</h3>
-					</header></a>
-				</div>
-				<div class="rect-three dk-blue"><a href="contact.html">
-					<img src="img/contact" alt="">
-					<header>
-						<h3>contact</h3>
-					</header></a>
-				</div>
+				<nav>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="about.html#about-top">About</a></li>
+						<li><a href="projects.html#projects-top">Projects</a></li>
+						<li><a href="contact.html#contact-top">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
+		<div class="wrapper">
+			<h1><span>a design portfolio</span><br>anita epp</h1>
+		</div>
+	</header>
+	<section> <!-- Background lt-blue -->
+	<div class="wrapper row">
+		<div class="rect-three dk-blue"><a href="about.html">
+			<div></div>
+			<header>
+				<h3>about</h3>
+			</header></a>
+		</div>
+		<div class="rect-three dk-blue"><a href="projects.html">
+			<div></div>
+			<header>
+				<h3>project</h3>
+			</header></a>
+		</div>
+		<div class="rect-three dk-blue"><a href="contact.html">
+			<div></div>
+			<header>
+				<h3>contact</h3>
+			</header></a>
+		</div>
+	</div>
 	</section>
 	<footer> <!--background dk-blue-->
 		<div class="wrapper row">
@@ -56,11 +58,13 @@
 				<p>Web Design | Graphic Design</p>
 				<p>Lincoln, Nebraska</p>
 			</section>
-			<ul>
-				<li><a href="https://www.facebook.com/"><span>facebook</span></a></li>
-				<li><a href="https://www.instagram.com/"><span>instagram</span></a></li>
-				<li><a href="https://dribbble.com/"><span>dribbble</span></a></li>
-			</ul>
+			<div>
+				<ul>
+					<li><a href="https://www.facebook.com/"><span>facebook</span></a></li>
+					<li><a href="https://www.instagram.com/"><span>instagram</span></a></li>
+					<li><a href="https://dribbble.com/"><span>dribbble</span></a></li>
+				</ul>
+			</div>
 			<section>
 				<h4>Contact</h4>
 				<p><a href="mailto:epp.anita@icloud.com">epp.anita@icloud.com</a></p>

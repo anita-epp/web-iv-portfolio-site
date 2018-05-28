@@ -8,18 +8,19 @@
 <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 <title>Epp Web I Assignment 5: Projects</title>
 </head>
-
 <body>
-	<header> <!--background dk-blue--->
-		<div> <!--navigation semi-transparent background --->
+	<header id="projects-top"> <!--background dk-blue-->
+		<div class="navbar"> <!--navigation semi-transparent background -->
 			<div class="wrapper row">
-				<p><a href="index.html">anita</a></p>
+				<div>
+					<p><a href="index.html">anita</a></p>
+				</div>
 				<nav>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="index.html#home">Home</a></li>
+						<li><a href="about.html#about-top">About</a></li>
+						<li><a href="#projects-top">Projects</a></li>
+						<li><a href="contact.html#contact-top">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -28,20 +29,49 @@
 			<div>
 				<h1>Projects</h1>
 			</div>
-			<ul>
-				<li><a href="#marketing">marketing</a></li>
-				<li><a href="#photography">photography</a></li>
-				<li><a href="#illustration">illustration</a></li>
-				<li><a href="corporate">corporate</a></li>
-				<li><a href="#local">local</a></li>
-			</ul>
+			<nav>
+				<ul>
+					<li><a href="#marketing">marketing</a></li>
+					<li><a href="#photography">photography</a></li>
+					<li><a href="#illustration">illustration</a></li>
+					<li><a href="#corporate">corporate</a></li>
+					<li><a href="#local">local</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
-	
-	
-	<!---enter body --------->
-	
-	
+	<div class="bg-lt-blue">
+		<div class="wrapper row">
+			<div class="col-two">
+				<div class="bg-dk-blue"><a href="marketing.html#marketing-top">
+					<div></div>
+					<p>Marketing</p></a>
+				</div>
+				<div class="bg-dk-blue"><a href="#projects-top">
+					<div></div>
+					<p>Illustration</p></a></div>
+				<div class="bg-dk-blue"><a href="#projects-top">
+					<div></div>
+					<p>Local</p></a>
+				</div>
+			</div>
+			<div class="col-two">
+				<div class="bg-dk-blue"><a href="#projects-top">
+					<div></div>
+					<p>Photography</p></a>
+				</div>
+				<div class="bg-dk-blue"><a href="#projects-top">
+					<div></div>
+					<p>Corporate</p></a></div>
+				<div>
+					<p>For more information about my work, contact me at<br>
+					<a href="mailto:epp.anita@icloud.com">epp.anita@icloud.com</a></p>
+					<p>Follow me on<br>
+					<a href="https://www.facebook.com/">Facebook</a> &#124; <a href="https://www.instagram.com/">Instagram</a> &#124; <a href="https://dribbble.com/">Dribbble</a></p>
+				</div>
+			</div>
+		</div>
+	</div>	
 	<footer> <!--background dk-blue-->
 		<div class="wrapper row">
 			<section>
@@ -49,11 +79,13 @@
 				<p>Web Design | Graphic Design</p>
 				<p>Lincoln, Nebraska</p>
 			</section>
-			<ul>
-				<li><a href="https://www.facebook.com/"><span>facebook</span></a></li>
-				<li><a href="https://www.instagram.com/"><span>instagram</span></a></li>
-				<li><a href="https://dribbble.com/"><span>dribbble</span></a></li>
-			</ul>
+			<div>
+				<ul>
+					<li><a href="https://www.facebook.com/"><span>facebook</span></a></li>
+					<li><a href="https://www.instagram.com/"><span>instagram</span></a></li>
+					<li><a href="https://dribbble.com/"><span>dribbble</span></a></li>
+				</ul>
+			</div>
 			<section>
 				<h4>Contact</h4>
 				<p><a href="mailto:epp.anita@icloud.com">epp.anita@icloud.com</a></p>
