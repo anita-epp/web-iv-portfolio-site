@@ -9,21 +9,17 @@
 <title>Epp Web I Assignment 5: About</title>
 </head>
 <body>
-	<header id="about-top"> <!--background dk-blue--->
-		<div class="navbar"> <!--navigation semi-transparent background --->
-			<div class="wrapper row">
-				<div>
-					<p><a href="index.html">anita</a></p>
-				</div>
-				<nav>
-					<ul>
-						<li><a href="index.html#home">Home</a></li>
-						<li><a href="#about-top">About</a></li>
-						<li><a href="projects.html#projects-top">Projects</a></li>
-						<li><a href="contact.html#contacct-top">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
+	<header> <!--background dk-blue-->
+		<div class="navbar"> <!--navigation semi-transparent background -->
+			<nav class="wrapper row">
+				<ul>
+					<li><a href="index.html">anita</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
 		</div>
 		<div class="wrapper">
 			<h1>about</h1>
@@ -32,30 +28,40 @@
 	<div> <!--background lt-blue-->
 		<div class="wrapper">
 			<div class="row">
-				<img src="img/portrait-two.jpg" alt="portrait of anita epp">
-				<p>Born in SanFrancisco, Anita Epp spent her childhood in the rural ghettos of Northern California.  She now resides in the heart of the country - Lincoln, Nebraska - with her husband and four children.  She studied Graphic Design at Southeast Community College, and solves creative problems both locally and nationally.</p>
-				<p><a href="projects.html">See my work.</a></p>
-				<p><a href="contact.html">Ask me a question.</a></p>
+				<img src="img/portrait-two.jpg" alt="">
+				<div class="col-two">
+					<p>Born in SanFrancisco, Anita Epp spent her childhood in the rural ghettos of Northern California.  She now resides in the heart of the country - Lincoln, Nebraska - with her husband and four children.  She studied Graphic Design at Southeast Community College, and solves creative problems both locally and nationally.</p>
+					<p><a href="projects.html">See my work.</a></p>
+					<p><a href="contact.html">Ask me a question.</a></p>
+				</div>
 			</div>
-			<div class="bg-dk-blue">
+			<section class="bg-dk-blue">
 				<header>
 					<h2>Books I Recommend</h2>
 				</header>
-				<ul class="bg-grey row">
-					<li>Ivanhoe, <span>Sir Walter Scott</span></li>
-					<li>Between the World and Me, <span>Ta-Nehisi Coates</span></li>
-					<li>Till We Have Faces, <span>C.S. Lewis</span></li>
-					<li>Trumpet of the Swan, <span>E.B. White</span></li>
-					<li>The House on Garibaldi Street, <span>Isser Harel</span></li>
-					<li>The Devil’s Highway,  <span>Luís Alberto Urrea</span></li>
-				</ul>
-			</div>
+				<div class="row bg-grey">
+					<div>
+						<ul>
+							<li>Ivanhoe, <span>Sir Walter Scott</span></li>
+							<li>Between the World and Me, <span>Ta-Nehisi Coates</span></li>
+							<li>Till We Have Faces, <span>C.S. Lewis</span></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li>Trumpet of the Swan, <span>E.B. White</span></li>
+							<li>The House on Garibaldi Street, <span>Isser Harel</span></li>
+							<li>The Devil’s Highway,  <span>Luís Alberto Urrea</span></li>
+						</ul>
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
 	<footer> <!--background dk-blue-->
 		<div class="wrapper row">
 			<section>
-				<h4>Anita Epp</h4>
+				<h3>Anita Epp</h3>
 				<p>Web Design | Graphic Design</p>
 				<p>Lincoln, Nebraska</p>
 			</section>
@@ -67,7 +73,7 @@
 				</ul>
 			</div>
 			<section>
-				<h4>Contact</h4>
+				<h3>Contact</h3>
 				<p><a href="mailto:epp.anita@icloud.com">epp.anita@icloud.com</a></p>
 				<p><a href="tel:+14025550000">402.555.0000</a></p>
 			</section>
