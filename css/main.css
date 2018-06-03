@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*--------------------------------------------------------------font-family: 'Monoton', cursive;
+/*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
-----------------------------------------------------------------font-family: 'Muli', sans-serif;
+----------------------------------------------------------------
 
 1.0 - Typography
 	1.1 - Headings
@@ -11,61 +11,449 @@
 	1.3 - Buttons
 	1.4 - Forms
 	1.5 - Lists
-	1.6 - Tables
 2.0 - Navigation Menus
 	2.1 - Main
 	2.2 - Sub
-	2.3 - Footer
 3.0 - Content
 	3.1 - Site Structure
 	3.2	- Site Header
 	3.3	- Site Footer
 4.0 - Media
 5.0 - Utility
-	5.1 - Text Sizes
-	5.2 - Colors
-	5.3 - Alignments
+	5.1 - Alignments
 
 --------------------------------------------------------------*/
+* {
+	font: 18px/1.5 'Muli', sans-serif;
+	color:  #08262d;
+	font-weight: 300;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
-
-
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------- 
 1.0 - Typography
 -------------------------------------------------------------- */
 
-/*--- 1.1 Headings ---*/
-/*--- 1.2 - Body Copy ---*/
-/*--- 1.3 - Buttons ---*/
-/*--- 1.4 - Forms ---*/
-/*--- 1.5 - Lists ---*/
-/*--- 1.6 - Tables ---*/
+nav p a, h1 {
+	font-family: 'Monoton', cursive;
+}
 
+nav li a, header p, h2, h3, h1 span, body > div p a, #btn, form > div > label, form p, legend {
+	font-weight: 900;
+}
+
+nav li a, footer h2, footer h3, footer h4, #book-box h2, #btn, form > div > label, form p, legend {
+	text-transform: uppercase;
+}
+
+nav a, .bg-dk-blue, footer a, body > div p a {
+	text-decoration: none;
+}
+
+#book-box li, #marketing .col-two:first-child p:last-child, #contact-body span {
+	font-weight: 600;
+}
+
+nav a:hover, header p a, h1, body > div p a:hover, #sub-nav a:hover {
+	color: #ba0278;
+}
+
+header p a:hover, h1 span, footer h2, footer h3, footer h4, footer p, footer a, .bg-dk-blue h2, .bg-dk-blue li, #book-box span, #sub-nav a, #marketing > header div:last-child p, #marketing .col-two p, #btn, input[type="text"], input[type="email"], textarea, ::placeholder {
+	color: #d5e8ef;
+}
+
+h1 span, .rect-three h2, .col-two h2, #marketing > header div:last-child p, #contact-body p:first-child, #contact-body span {
+	font-size: 22px;
+}
+
+footer p, footer a, footer h2, footer h3, footer h4, #btn {
+	font-size: 14px;
+}
+
+nav li, footer li {
+	display: inline-block;
+}
+
+#book-box span, #marketing .col-two:first-child p:last-child {
+	font-style: italic;
+}
+
+#sub-nav a, #sub-nav a:hover, fieldset {
+	border: none;
+}
+
+h1, sub-nav a, #sub-nav ul {
+	margin: 0;
+}
+
+label, #sub-nav li {
+	display: block;
+}
+
+.rect-three h2, .col-two h2, #about-body p {
+	margin: 0 0 30px;
+}
+
+#projects-body p, #contact-body p:first-child, .rect-three h2, .col-two h2 {
+	text-align: center;
+}
+
+#marketing .col-two:last-child p, footer .row section:last-child, form > div:last-child > p {
+	text-align: right;
+}
+
+#projects-body p, fieldset .col-two label {
+	margin-bottom: 40px;
+}
+
+#sub-nav li:last-child, #projects-body .row:last-child {
+	margin-bottom: 0;
+}
+
+nav ul a, #btn {
+	border: solid 3px transparent;
+}
+
+.rect-three, .col-two.bg-dk-blue, input[type="text"], input[type="email"], textarea {
+	border: solid 7px transparent;
+}
+
+.rect-three:hover, .col-two.bg-dk-blue:hover, input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+	border: solid 7px #ba0278;
+}
+
+/*--- 1.1 Headings ---*/
+
+h1 {
+	font-size: 120px;
+}
+
+#book-box h2 {
+	margin: 0 0 25px;
+}
+
+/*--- 1.2 - Body Copy ---*/
+
+header p a {
+	font-size: 35px;
+	font-weight: 300;
+}
+
+footer p, footer h2, footer h3, footer h4 {
+	margin: 6px 0;
+}
+
+#marketing > header div:last-child p {
+	margin-top: -30px;
+}
+
+#marketing .col-two:last-child {
+	margin-top: 240px;
+}
+
+/*--- 1.3 - Buttons ---*/
+
+#btn {
+	padding: 30px 45px;
+}
+
+#btn:hover {
+	border: solid 3px #08262d;
+	color: #08262d;
+}
+
+form #btn {
+	padding: 30px 90px;
+}
+
+/*--- 1.4 - Forms ---*/
+
+
+form > div > label, form p, fieldset {
+	margin: 60px 0 5px;
+}
+
+form > div > label:first-child {
+	margin-top: 100px;
+}
+
+input[type="text"], input[type="email"], textarea {
+	padding: 10px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+	outline: none;
+}
+
+textarea {
+	height: 195px;
+}
+
+fieldset .col-two {
+	width: 170px;
+}
+
+fieldset .col-two input {
+	margin-right: 10px;
+}
+
+form > div:last-child > p {
+	margin-top: 90px;
+}
+
+form > .col-two, input[type="text"], input[type="email"], textarea {
+	width: 400px;
+}
+/*--- 1.5 - Lists ---*/
+
+footer ul {
+	list-style-type: none;   /* nav li a for header needs to have zero padding/margins */
+	margin: 10px 0 0;
+}
+
+footer li span {
+	display: none;
+}
 
 /*--------------------------------------------------------------
 2.0 - Navigation Menus
 -------------------------------------------------------------- */
 
 /*--- 2.1 - Main ---*/
+
+.navbar {
+	background-color: rgba(213, 232, 239, .7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+nav li {
+	margin-left: 10px;
+}
+
+nav ul {
+	margin-top: 22px;
+}
+
+nav ul a {
+	padding: 8px 28px;	
+}
+
+nav ul a:hover {
+	border: solid 3px #ba0278;
+}
+
+nav p {
+	margin: 10px 0;
+}
+
 /*--- 2.2 - Sub ---*/
-/*--- 2.3 - Footer ---*/
+
+#sub-nav li {
+	margin: 0 0 5px 15px;
+}
+
+#sub-nav div:first-child {
+	width: 690px;
+}
+
+#sub-nav nav {
+	width: 270px;
+	border-left: solid 3px #ba0278;
+}
+
+#sub-nav a, #sub-nav a:hover {
+	text-transform: none;
+}
+
+#sub-nav ul {
+	padding-left: 0;
+}
 
 /*--------------------------------------------------------------
 3.0 - Content
 -------------------------------------------------------------- */
 
+.navbar div:first-child, .rect-three, footer .row  section, footer .row div, footer li a, .row img:first-child, #book-box .row div:first-child, .col-two:first-child, #sub-nav div:first-child, .col-three, #marketing .col-two:first-child {
+	float: left;
+}
+
+.navbar div:last-child, .rect-three:last-child, footer .row section:last-child, div.col-two, .col-two:last-child, #book-box .row div:last-child, #sub-nav nav, .col-three:last-child, #marketing .col-two:last-child {
+	float: right;
+}
+
+.wrapper, nav {
+	margin: 0 auto;
+}
+
+.bg-dk-blue, footer, body > header, #btn {
+	background-color: #08262d;
+}
+
+#home, fieldset, footer ul, #sub-nav a {
+	padding: 0;
+}
+
 /*--- 3.1 - Site Structure ---*/
+
+body > div:nth-child(2) {
+	padding: 125px 0;
+}
+
+body > div:nth-child(2), #btn:hover {
+	background-color: #d5e8ef;
+}
+
+.rect-three:first-child {
+	margin-right: 28px;
+}
+
+#book-box {
+	padding: 25px;
+	margin-top: 130px;
+}
+
+.bg-grey, input[type="text"], input[type="email"], textarea {
+	background-color: #52696d;
+}
+
+#book-box .row div {
+	width: 440px;
+}
+
+#projects-body .row {
+	margin-bottom: 100px;
+}
+
+#projects-body .row:last-child div {
+	width: 380px;
+	padding: 60px 80px 0 0;
+}
+
+#marketing > div .bg-grey {
+	padding: 30px 30px 30px 50px;
+	margin-top: 115px;
+}
+
+.col-three:first-child {
+	margin-right: 80px;
+}
+
 /*--- 3.2	- Site Header ---*/
+
+#home {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#28474c+0,28474c+20,d5e8ef+100 */
+	background: #28474c; /* Old browsers */
+	background: -moz-linear-gradient(top, #28474c 0%, #28474c 20%, #d5e8ef 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #28474c 0%,#28474c 20%,#d5e8ef 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #28474c 0%,#28474c 20%,#d5e8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28474c', endColorstr='#d5e8ef',GradientType=0 ); /* IE6-9 */
+}
+
+#home h1 {
+	line-height: 110px;
+}
+
+#home h1 span {
+	margin-left: 20px;
+}
+
+#home > div:last-child {
+	padding: 300px 0 125px;
+}
+
+body > header {
+	padding: 120px 0 50px;
+}
+
 /*--- 3.3	- Site Footer ---*/
+
+footer {
+	padding: 30px 0;
+}
+
+footer li a {
+	width: 60px;
+	height: 60px;
+}
+
+footer section {
+	width: 200px;
+}
+
+footer .row div {
+	width: 300px;
+	margin-left: 170px;
+}
+
+footer li:first-child a {
+	background: url(../img/sprites.png) 0 0 no-repeat;
+}
+
+footer li:nth-child(2) a {
+	background: url(../img/sprites.png) -60px 0 no-repeat;
+	margin: 0 30px;
+}
+
+footer li:last-child a {
+	background: url(../img/sprites.png) -120px 0 no-repeat;
+}
+
+footer li:first-child a:hover {
+	background: url(../img/sprites.png) 0 -60px no-repeat;
+}
+
+footer li:nth-child(2) a:hover {
+	background: url(../img/sprites.png) -60px -60px no-repeat;
+}
+
+footer li:last-child a:hover {
+	background: url(../img/sprites.png) -120px -60px no-repeat;
+}
 
 /*--------------------------------------------------------------
 4.0 - Media
 -------------------------------------------------------------- */
 
+.rect-three img {
+	padding: 35px 35px 30px;
+}
+
+.col-two img {
+	padding: 38px 0 30px 38px;
+}
+
+.col-three img {
+	padding: 50px 40px;
+}
+
 /*--------------------------------------------------------------
 5.0 - Utility
 -------------------------------------------------------------- */
 
-/*--- 5.1 - Text Sizes ---*/
-/*--- 5.2 - Colors ---*/
-/*--- 5.3 - Alignments ---*/
+/*--- 5.1 - Alignments ---*/
+.wrapper {
+	width: 1000px;
+}
+
+.row {
+	overflow: auto;
+}
+
+.col-two { 
+	width: 450px;
+}
+
+.col-three {
+	width: 280px;
+}
+
+.rect-three {
+	width: 315px;
+}

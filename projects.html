@@ -9,78 +9,82 @@
 <title>Epp Web I Assignment 5: Projects</title>
 </head>
 <body>
-	<header> <!--background dk-blue-->
-		<div class="navbar"> <!--navigation semi-transparent background -->
+	<header> 
+		<div class="navbar"> 
 			<nav class="wrapper row">
-				<ul>
-					<li><a href="index.html">anita</a></li>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
+				<div>
+					<p><a href="index.html">anita</a></p>
+				</div>
+				<div>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
 			</nav>
 		</div>
-		<div class="wrapper row">
+		<div id="sub-nav" class="wrapper row">
 			<div>
-				<h1>Projects</h1>
+				<h1>projects</h1> <!-- this div has internal scrolling, not sure what to do with it -->
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#marketing">marketing</a></li>
-					<li><a href="#photography">photography</a></li>
-					<li><a href="#illustration">illustration</a></li>
-					<li><a href="#corporate">corporate</a></li>
-					<li><a href="#local">local</a></li>
+					<li><a href="marketing.html">marketing</a></li>
+					<li><a href="#">photography</a></li>
+					<li><a href="#">illustration</a></li>
+					<li><a href="#">corporate</a></li>
+					<li><a href="#">local</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<div class="bg-lt-blue">
-		<div class="wrapper">
+	<div>
+		<div class="wrapper" id="projects-body">
 			<div class="row">
-				<a href="marketing.html"><section class="bg-dk-blue">
+				<a class="col-two bg-dk-blue" href="marketing.html"><section>
 					<img src="img/marketing-two-crop.jpg" alt="">
 					<header>
-						<h2>Marketing</h2>
+						<h2>marketing</h2>
 					</header>
 				</section></a>
-				<a href="#"><section class="bg-dk-blue">
+				<a class="col-two bg-dk-blue" href="#"><section>
 					<img src="img/photography.jpg" alt="">
 					<header>
-						<h2>Photography</h2>
+						<h2>photography</h2>
 					</header>
 				</section></a>
 			</div>
 			<div class="row">
-				<a href="#"><section class="bg-dk-blue">
+				<a class="col-two bg-dk-blue" href="#"><section>
 					<img src="img/illustration.jpg" alt="">
 					<header>
-						<h2>Illustration</h2>
+						<h2>illustration</h2>
 					</header>
 				</section></a>
-				<a href="#"><section class="bg-dk-blue">
+				<a class="col-two bg-dk-blue" href="#"><section>
 					<img src="img/corporate.jpg" alt="">
 					<header>
-						<h2>Corporate</h2>
+						<h2>corporate</h2>
 					</header>
 				</section></a>
 			</div>
 			<div class="row">
-				<a href="#"><section class="bg-dk-blue">
+				<a class="col-two bg-dk-blue" href="#"><section>
 					<img src="img/local.jpg" alt="">
 					<header>
-						<h2>Local</h2>
+						<h2>local</h2>
 					</header>
 				</section></a>
-				<div>
+				<div class="col-two">
 					<p>For more information about my work, contact me at<br><a href="mailto:epp.anita@icloud.com">epp.anita@icloud.com</a></p>
-					<p>Follow me on<br><a href="https://www.facebook.com/">Facebook</a> &#124; <a href="https://www.instagram.com/">Instagram</a> &#124; <a href="https://dribbble.com/">Dribbble</a></p>
+					<p>Follow me on<br><a href="https://www.facebook.com/" target="_blank">Facebook</a> &#124; <a href="https://www.instagram.com/" target="_blank">Instagram</a> &#124; <a href="https://dribbble.com/" target="_blank">Dribbble</a></p>
 				</div>
 			</div>
 		</div>
 	</div>	
-	<footer> <!--background dk-blue-->
+	<footer>
 		<div class="wrapper row">
 			<section>
 				<h3>Anita Epp</h3>
@@ -89,9 +93,9 @@
 			</section>
 			<div>
 				<ul>
-					<li><a href="https://www.facebook.com/"><span>facebook</span></a></li>
-					<li><a href="https://www.instagram.com/"><span>instagram</span></a></li>
-					<li><a href="https://dribbble.com/"><span>dribbble</span></a></li>
+					<li><a href="https://www.facebook.com/" target="_blank"><span>facebook</span></a></li>
+					<li><a href="https://www.instagram.com/" target="_blank"><span>instagram</span></a></li>
+					<li><a href="https://dribbble.com/" target="_blank"><span>dribbble</span></a></li>
 				</ul>
 			</div>
 			<section>
