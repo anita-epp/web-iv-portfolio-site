@@ -24,7 +24,7 @@
 
 --------------------------------------------------------------*/
 * {
-	font: 18px/1.5 'Muli', sans-serif;
+	font: 18px/27px 'Muli', sans-serif;
 	color:  #08262d;
 	font-weight: 300;
 	-moz-box-sizing: border-box;
@@ -46,7 +46,7 @@ nav li a, header p, h2, h3, h1 span, body > div p a, #btn, form > div > label, f
 	font-weight: 900;
 }
 
-nav li a, footer h2, footer h3, footer h4, #book-box h2, #btn, form > div > label, form p, legend {
+nav li a, footer h2, footer h3, footer h4, #about-body section h2, #btn, form > div > label, form p, legend {
 	text-transform: uppercase;
 }
 
@@ -54,15 +54,15 @@ nav a, .bg-dk-blue, footer a, body > div p a {
 	text-decoration: none;
 }
 
-#book-box li, #marketing .col-two:first-child p:last-child, #contact-body span {
+#about-body section li, #marketing .col-two:first-child p:last-child, #contact-body span {
 	font-weight: 600;
 }
 
-nav a:hover, header p a, h1, body > div p a:hover, #sub-nav a:hover {
+nav a:hover, header p a, h1, body > div p a:hover, #sub-nav a:hover, footer section:last-child a:hover {
 	color: #ba0278;
 }
 
-header p a:hover, h1 span, footer h2, footer h3, footer h4, footer p, footer a, .bg-dk-blue h2, .bg-dk-blue li, #book-box span, #sub-nav a, #marketing > header div:last-child p, #marketing .col-two p, #btn, input[type="text"], input[type="email"], textarea, ::placeholder {
+header p a:hover, h1 span, footer h2, footer h3, footer h4, footer p, footer a, .bg-dk-blue h2, .bg-dk-blue li, #about-body section span, #sub-nav a, #marketing > header div:last-child p, #marketing .col-two p, #btn, input[type="text"], input[type="email"], textarea, ::placeholder {
 	color: #d5e8ef;
 }
 
@@ -74,11 +74,7 @@ footer p, footer a, footer h2, footer h3, footer h4, #btn {
 	font-size: 14px;
 }
 
-nav li, footer li {
-	display: inline-block;
-}
-
-#book-box span, #marketing .col-two:first-child p:last-child {
+#about-body section span, #marketing .col-two:first-child p:last-child {
 	font-style: italic;
 }
 
@@ -94,16 +90,16 @@ label, #sub-nav li {
 	display: block;
 }
 
-.rect-three h2, .col-two h2, #about-body p {
-	margin: 0 0 30px;
-}
-
-#projects-body p, #contact-body p:first-child, .rect-three h2, .col-two h2 {
+#projects-body p, #contact-body p:first-child, .rect-three, .col-two, .col-three  {
 	text-align: center;
 }
 
 #marketing .col-two:last-child p, footer .row section:last-child, form > div:last-child > p {
 	text-align: right;
+}
+
+#about-body p, #marketing .col-two:first-child p, form .col-two {
+	text-align: left;
 }
 
 #projects-body p, fieldset .col-two label {
@@ -126,14 +122,40 @@ nav ul a, #btn {
 	border: solid 7px #ba0278;
 }
 
+footer p, footer h2, footer h3, footer h4 {
+	margin: 6px 0;
+}
+
+
 /*--- 1.1 Headings ---*/
 
 h1 {
 	font-size: 120px;
 }
 
-#book-box h2 {
+#about-body section h2 {
 	margin: 0 0 25px;
+}
+
+.rect-three h2 {
+	margin-top: 20px;
+}
+
+h1 {
+	line-height: 170px;
+}
+
+#marketing h1 {
+	line-height: 60px;
+	margin-top: 60px;
+}
+
+#home h1 {
+	line-height: 110px;
+}
+
+#home h1 span {
+	margin-left: 20px;
 }
 
 /*--- 1.2 - Body Copy ---*/
@@ -143,16 +165,8 @@ header p a {
 	font-weight: 300;
 }
 
-footer p, footer h2, footer h3, footer h4 {
-	margin: 6px 0;
-}
-
-#marketing > header div:last-child p {
-	margin-top: -30px;
-}
-
-#marketing .col-two:last-child {
-	margin-top: 240px;
+#about-body p {
+	margin: 0 0 30px;
 }
 
 /*--- 1.3 - Buttons ---*/
@@ -177,10 +191,6 @@ form > div > label, form p, fieldset {
 	margin: 60px 0 5px;
 }
 
-form > div > label:first-child {
-	margin-top: 100px;
-}
-
 input[type="text"], input[type="email"], textarea {
 	padding: 10px;
 }
@@ -193,10 +203,6 @@ textarea {
 	height: 195px;
 }
 
-fieldset .col-two {
-	width: 170px;
-}
-
 fieldset .col-two input {
 	margin-right: 10px;
 }
@@ -205,9 +211,6 @@ form > div:last-child > p {
 	margin-top: 90px;
 }
 
-form > .col-two, input[type="text"], input[type="email"], textarea {
-	width: 400px;
-}
 /*--- 1.5 - Lists ---*/
 
 footer ul {
@@ -217,6 +220,10 @@ footer ul {
 
 footer li span {
 	display: none;
+}
+
+nav li, footer li {
+	display: inline-block;
 }
 
 /*--------------------------------------------------------------
@@ -249,10 +256,6 @@ nav ul a:hover {
 	border: solid 3px #ba0278;
 }
 
-nav p {
-	margin: 10px 0;
-}
-
 /*--- 2.2 - Sub ---*/
 
 #sub-nav li {
@@ -280,11 +283,11 @@ nav p {
 3.0 - Content
 -------------------------------------------------------------- */
 
-.navbar div:first-child, .rect-three, footer .row  section, footer .row div, footer li a, .row img:first-child, #book-box .row div:first-child, .col-two:first-child, #sub-nav div:first-child, .col-three, #marketing .col-two:first-child {
+.navbar div:first-child, .rect-three, footer .row  section, footer .row div, footer li a, .row > img:first-child, #about-body section .row div:first-child, .col-two, #sub-nav div:first-child, .col-three, #marketing .col-two, form .col-two {
 	float: left;
 }
 
-.navbar div:last-child, .rect-three:last-child, footer .row section:last-child, div.col-two, .col-two:last-child, #book-box .row div:last-child, #sub-nav nav, .col-three:last-child, #marketing .col-two:last-child {
+.navbar div:last-child, footer .row section:last-child, col-two:last-child, #about-body section .row div:last-child, #sub-nav nav, a:nth-child(5) .col-three, #marketing .col-two:last-child, #projects-body a:last-child .col-two, #projects-body .row:last-child div, form .col-two:nth-child(2) {
 	float: right;
 }
 
@@ -296,8 +299,12 @@ nav p {
 	background-color: #08262d;
 }
 
-#home, fieldset, footer ul, #sub-nav a {
+#home, fieldset, footer ul, #sub-nav a, #marketing .col-two, form .col-two {
 	padding: 0;
+}
+
+#sub-nav, form {
+	padding: 5px 0;
 }
 
 /*--- 3.1 - Site Structure ---*/
@@ -310,11 +317,7 @@ body > div:nth-child(2), #btn:hover {
 	background-color: #d5e8ef;
 }
 
-.rect-three:first-child {
-	margin-right: 28px;
-}
-
-#book-box {
+#about-body section {
 	padding: 25px;
 	margin-top: 130px;
 }
@@ -323,8 +326,12 @@ body > div:nth-child(2), #btn:hover {
 	background-color: #52696d;
 }
 
-#book-box .row div {
+#about-body section .row div {
 	width: 440px;
+}
+
+#about-body .col-two {
+	padding-top: 0;
 }
 
 #projects-body .row {
@@ -333,16 +340,43 @@ body > div:nth-child(2), #btn:hover {
 
 #projects-body .row:last-child div {
 	width: 380px;
-	padding: 60px 80px 0 0;
 }
 
-#marketing > div .bg-grey {
-	padding: 30px 30px 30px 50px;
+#marketing .bg-grey {
+	padding: 30px 50px;
 	margin-top: 115px;
 }
 
-.col-three:first-child {
+a:first-child .col-three {
 	margin-right: 80px;
+}
+
+a:last-child .rect-three {
+	margin-right: 0;
+}
+
+#marketing .col-two:last-child {
+	position: absolute;
+	bottom: 50px;
+	right: 40px;
+}
+
+#marketing .bg-grey {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+form {
+	margin-top: 45px;
+}
+
+fieldset .col-two {
+	width: 170px;
+}
+
+form > .col-two, input[type="text"], input[type="email"], textarea {
+	width: 400px;
 }
 
 /*--- 3.2	- Site Header ---*/
@@ -354,14 +388,6 @@ body > div:nth-child(2), #btn:hover {
 	background: -webkit-linear-gradient(top, #28474c 0%,#28474c 20%,#d5e8ef 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #28474c 0%,#28474c 20%,#d5e8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28474c', endColorstr='#d5e8ef',GradientType=0 ); /* IE6-9 */
-}
-
-#home h1 {
-	line-height: 110px;
-}
-
-#home h1 span {
-	margin-left: 20px;
 }
 
 #home > div:last-child {
@@ -421,16 +447,31 @@ footer li:last-child a:hover {
 4.0 - Media
 -------------------------------------------------------------- */
 
-.rect-three img {
-	padding: 35px 35px 30px;
+.thumbnail {
+  max-width: 100%;
 }
 
-.col-two img {
-	padding: 38px 0 30px 38px;
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .8)
 }
 
-.col-three img {
-	padding: 50px 40px;
+.lightbox img {
+	max-width: 100%;
+	max-height: 100%;  
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	outline: none;
+	display: block;
 }
 
 /*--------------------------------------------------------------
@@ -448,12 +489,16 @@ footer li:last-child a:hover {
 
 .col-two { 
 	width: 450px;
+	padding: 35px 35px 10px;
 }
 
 .col-three {
 	width: 280px;
+	padding: 50px 40px;
 }
 
 .rect-three {
-	width: 315px;
+	width: 300px;
+	padding: 30px 30px 10px;
+	margin-right: 50px;
 }
